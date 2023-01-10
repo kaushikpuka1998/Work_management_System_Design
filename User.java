@@ -6,9 +6,9 @@ class User {
   String name;
   List<Issue> Assigned;
   List<Issue> Reported;
-  LIst<SubTask> subtasks;
+  List<SubTask> subtasks;
   
-  User(int id, String n) {
+  User(int id, String n,List<Issue> Assigned, List<Issue> Reported, List<SubTask> subtasks) {
     this.id = id;
     this.name = n;
   }
@@ -19,6 +19,27 @@ class User {
 
   String getName() {
     return name;
+  }
+
+  void setAssignedWork(List<Issue> assignedworks)
+  {
+    this.Assigned = assignedworks;
+  }
+
+  void setReportedWork(List<Issue> rworks)
+  {
+    this.Reported = rworks;
+  }
+
+  List<SubTask> getSubTaskList()
+  { 
+    return subtasks;  
+  }
+
+
+  void setSubTask(SubTask subTask)
+  {
+    getSubTaskList().add(subTask);
   }
 
 }
