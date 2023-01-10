@@ -11,6 +11,9 @@ class User {
   User(int id, String n,List<Issue> Assigned, List<Issue> Reported, List<SubTask> subtasks) {
     this.id = id;
     this.name = n;
+    this.Assigned = Assigned;
+    this.Reported = Reported;
+    this.subtasks = subtasks;
   }
 
   int getID() {
