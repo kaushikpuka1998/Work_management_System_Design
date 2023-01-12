@@ -5,7 +5,9 @@ class Main {
     System.out.println("Hello, world!");
 
     User b = new User(12, "kg",new ArrayList<Issue>(),new ArrayList<Issue>(),new ArrayList<SubTask>());
-    System.out.println(b.getID());
+
+    User c = new User(13, "kg",new ArrayList<Issue>(),new ArrayList<Issue>(),new ArrayList<SubTask>());
+    System.out.println(c.getID());
     b.setSubTask(new SubTask(12,123,"Checking Subtask"));
 
     System.out.println(b.getSubTaskList().get(0).description);
