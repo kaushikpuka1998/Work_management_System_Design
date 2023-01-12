@@ -1,6 +1,8 @@
+package Model;
+
 import java.util.List;
 
-class Issue{
+public class Issue{
     String taskID;
     TaskStatus taskStatus;
     String Title;

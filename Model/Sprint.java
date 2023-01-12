@@ -1,12 +1,27 @@
+package Model;
+
+import java.util.List;
+
 public class Sprint {
     int id;
     String name;
     String Description;
 
-    public Sprint(int id, String name, String description) {
+    List<Issue> issues;
+
+    public Sprint(int id, String name, String description, List<Issue> issues) {
         this.id = id;
         this.name = name;
         Description = description;
+        this.issues = issues;
+    }
+
+    public List<Issue> getIssues() {
+        return issues;
+    }
+
+    public void setIssues(List<Issue> issues) {
+        this.issues = issues;
     }
 
     public int getId() {

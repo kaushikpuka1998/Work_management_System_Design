@@ -1,3 +1,5 @@
+package Model;
+
 public enum TaskStatus {
     REPORTED,ASSIGNED,IN_PROCESS,DEV_COMPLETE,TESTED,DEPLOYED_IN_PRODUCTION
 }

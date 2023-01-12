@@ -1,6 +1,8 @@
+package Model;
+
 import java.util.List;
 
-class User {
+public class User {
 
   int id;
   String name;
@@ -8,7 +10,7 @@ class User {
   List<Issue> Reported;
   List<SubTask> subtasks;
   
-  User(int id, String n,List<Issue> Assigned, List<Issue> Reported, List<SubTask> subtasks) {
+  public User(int id, String n, List<Issue> Assigned, List<Issue> Reported, List<SubTask> subtasks) {
     this.id = id;
     this.name = n;
     this.Assigned = Assigned;
@@ -16,7 +18,7 @@ class User {
     this.subtasks = subtasks;
   }
 
-  int getID() {
+  public int getID() {
     return id;
   }
 
@@ -34,13 +36,13 @@ class User {
     this.Reported = rworks;
   }
 
-  List<SubTask> getSubTaskList()
+  public List<SubTask> getSubTaskList()
   { 
     return subtasks;  
   }
 
 
-  void setSubTask(SubTask subTask)
+  public void setSubTask(SubTask subTask)
   {
     getSubTaskList().add(subTask);
   }

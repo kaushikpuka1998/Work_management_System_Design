@@ -1,4 +1,7 @@
-import java.util.List;
+import Model.Issue;
+import Model.SubTask;
+import Model.User;
+
 import java.util.ArrayList;
 class Main {
   public static void main(String args[]) {
@@ -10,7 +13,7 @@ class Main {
     System.out.println(c.getID());
     b.setSubTask(new SubTask(12,123,"Checking Subtask"));
 
-    System.out.println(b.getSubTaskList().get(0).description);
+    System.out.println(b.getSubTaskList().get(0).getDescription());
   
 
   }
